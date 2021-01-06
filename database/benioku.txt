@@ -1,0 +1,1 @@
+Ne olur ne olmaz databasenin ismini import ederken 'WebHaberSayfa' yapalım
