@@ -12,9 +12,8 @@
             </div>
         </ItemTemplate>
     </asp:Repeater>
-    <asp:SqlDataSource ID="dsIcerik" runat="server" ConnectionString="<%$ ConnectionStrings:WebHaberSayfaConnectionString %>" SelectCommand="SELECT * FROM [sayfalar] WHERE (([sayfa_id] = @sayfa_id) AND ([aktif] = @aktif) AND ([silindi] = @silindi))">
+    <asp:SqlDataSource ID="dsIcerik" runat="server" ConnectionString="<%$ ConnectionStrings:WebHaberSayfaConnectionString %>" SelectCommand="SELECT * FROM [haberler] WHERE (([aktif] = @aktif) AND ([silindi] = @silindi))" ProviderName="System.Data.SqlClient">
         <SelectParameters>
-            <asp:QueryStringParameter DefaultValue="1" Name="sayfa_id" QueryStringField="id" Type="Int32" />
             <asp:Parameter DefaultValue="True" Name="aktif" Type="Boolean" />
             <asp:Parameter DefaultValue="False" Name="silindi" Type="Boolean" />
         </SelectParameters>
