@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="anasablon.master.cs" Inherits="kureselisinmahaber.anasablon" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+        }
+        .auto-style3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2">Küresel Isınma Sitesi</td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Repeater ID="rptMenu" runat="server" DataSourceID="dsMenu">
+                            <ItemTemplate>
+                                <a href="Default.aspx?id=<%#Eval("sayfa_id") %>"><%#Eval("sayfa_basligi") %></a>||
+                            </ItemTemplate>
+                        </asp:Repeater>
+                        <a href="haberler.aspx">Haberler</a>
+                        <asp:SqlDataSource ID="dsMenu" runat="server" ConnectionString="<%$ ConnectionStrings:WebHaberSayfaConnectionString %>" SelectCommand="SELECT * FROM [sayfalar] WHERE (([aktif] = @aktif) AND ([silindi] = @silindi)) ORDER BY [sira]">
+                            <SelectParameters>
+                                <asp:Parameter DefaultValue="True" Name="aktif" Type="Boolean" />
+                                <asp:Parameter DefaultValue="False" Name="silindi" Type="Boolean" />
+                            </SelectParameters>
+                        </asp:SqlDataSource>
+                    </td>
+                </tr>
+                <tr>
+                    <td style ="height:500px; vertical-align:top">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">Trapp(c) 2021</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
