@@ -5,17 +5,14 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using WebProgramlamaProje.Models;
-using System.Data;
-using System.Data.SqlClient;
+using WebProgramlamaProjeOdevi.Models;
 
-namespace WebProgramlamaProje.Controllers
+namespace WebProgramlamaProjeOdevi.Controllers
 {
     public class HomeController : Controller
     {
-        
         private readonly ILogger<HomeController> _logger;
-        
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -27,10 +24,6 @@ namespace WebProgramlamaProje.Controllers
         }
 
         public IActionResult Privacy()
-        {
-            return View();
-        }
-        public IActionResult Login()
         {
             return View();
         }
