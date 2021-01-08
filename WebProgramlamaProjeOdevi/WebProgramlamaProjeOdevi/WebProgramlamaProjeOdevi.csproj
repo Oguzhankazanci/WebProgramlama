@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="admin\**" />
+    <Content Remove="admin\**" />
+    <EmbeddedResource Remove="admin\**" />
+    <None Remove="admin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="ViewModels\" />
   </ItemGroup>
 
