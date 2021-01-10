@@ -28,6 +28,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="yonetici" asp-action="yonetimPanel">panel</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Haber" asp-action="Haberindex">Haberler</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -47,7 +50,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/js/panel.js" asp-append-version="true"></script>
+
 
     @RenderSection("Scripts", required: false)
 </body>

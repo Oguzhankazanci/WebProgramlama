@@ -1,0 +1,63 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<HaberModel>
+@{
+    bool control = true;
+    ViewData["Title"] = "News";
+}
+<link rel="stylesheet" href="~/css/Habercss.css" />
+<body>
+    <h1>Haber</h1>
+
+    @foreach (var haber in Model)
+    {
+
+        if (control)
+        {
+            <div class="blog-card">
+                <div class="meta">
+                    <div class="photo" style="background-image: url(https://picsum.photos/200/300)"></div>
+                    <ul class="details">
+                        <li class="author"><a href="#">Admin</a></li>
+                        <li class="date">@haber.haber_tarih</li>
+
+                    </ul>
+                </div>
+                <div class="description">
+                    <h1>@haber.haber_baslik</h1>
+
+                    <p> @haber.haber_icerik</p>
+                    <p class="read-more">
+                        <a href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+            control = false;
+        }
+        else
+        {
+            <div class="blog-card alt">
+                <div class="meta">
+                    <div class="photo" style="background-image: url(https://picsum.photos/200/300)"></div>
+                    <ul class="details">
+                        <li class="author"><a href="#">Admin</a></li>
+                        <li class="date">@haber.haber_tarih</li>
+
+                    </ul>
+                </div>
+                <div class="description">
+                    <h1>@haber.haber_baslik</h1>
+
+                    <p>@haber.haber_icerik</p>
+                    <p class="read-more">
+                        <a href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+            control = true;
+        }
+
+    }
+
+</body>
