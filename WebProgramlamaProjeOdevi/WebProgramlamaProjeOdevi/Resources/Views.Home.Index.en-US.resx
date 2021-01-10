@@ -117,7 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Message" xml:space="preserve">
-    <value>Merhaba dünya</value>
+  <data name="str1" xml:space="preserve">
+    <value>Global warming is the name given to the increase in the average temperatures measured on land, sea and air throughout the year on Earth as a result of the greenhouse effect, which is thought to be caused by the greenhouse gases released into the atmosphere. Today, climate scientists (climatologists) agree on global warming.</value>
+  </data>
+  <data name="str2" xml:space="preserve">
+    <value>Global Climate Change is the climate changes caused by global warming caused by greenhouse gases whose amount and intensity increase in the atmosphere as a result of activities such as human consumption of fossil fuels, industrial and agricultural activities. These climatic changes are drought, desertification, instability and deviations in precipitation, floods, typhoon, storm, tornado etc. It manifests itself with symptoms such as increases in meteorological events.</value>
+  </data>
+  <data name="str3" xml:space="preserve">
+    <value>The Caribbean and parts of the United States were covered by a cloud of Sahara dust from the African desert over the Atlantic Ocean in June 2020.</value>
+  </data>
+  <data name="str4" xml:space="preserve">
+    <value>With the Penguin Protection System, the melting of the glaciers and the living conditions of penguins have facilitated.</value>
+  </data>
+  <data name="str5" xml:space="preserve">
+    <value>Rainless days and the decrease in dam occupancy rates brought the danger of drought across the country.</value>
+  </data>
+  <data name="strh1" xml:space="preserve">
+    <value>Global warming</value>
+  </data>
+  <data name="strh2" xml:space="preserve">
+    <value>Breaking news</value>
+  </data>
+  <data name="strh3" xml:space="preserve">
+    <value>Dust Storm!</value>
+  </data>
+  <data name="strh4" xml:space="preserve">
+    <value>Protection System!</value>
+  </data>
+  <data name="strh5" xml:space="preserve">
+    <value>Izmir Problem!</value>
   </data>
 </root>

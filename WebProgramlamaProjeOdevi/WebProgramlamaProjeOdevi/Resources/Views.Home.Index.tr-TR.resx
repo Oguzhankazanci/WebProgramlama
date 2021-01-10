@@ -117,7 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Merhaba" xml:space="preserve">
-    <value>Hello World</value>
+  <data name="str1" xml:space="preserve">
+    <value>Küresel ısınma, başlıca atmosfere salınan sera gazların neden olduğu düşünülen sera etkisinin sonucunda, Dünya üzerinde yıl boyunca kara, deniz ve havada ölçülen ortalama sıcaklıklarda görülen artışa verilen isimdir. Günümüzde iklim bilimciler (klimatolog) küresel ısınma konusunda hemfikirdirler.</value>
+  </data>
+  <data name="str2" xml:space="preserve">
+    <value>Küresel İklim Değişikliği insani fosil yakıtlar tüketimi, endüstriyel ve tarımsal gibi faaliyetlerinin sonucu olarak atmosferdeki miktarı ve yoğunluğu artan sera gazlarının neden olduğu küresel ısınmanın neden olduğu iklim değişiklikleridir. Bu iklim değişiklikleri kuraklık, çölleşme, yağışlardaki dengesizlik ve sapmalar, su baskınları, tayfun, fırtına, hortum vb. meteorolojik olaylarda artışlar gibi belirtilerle kendini gösterir.</value>
+  </data>
+  <data name="str3" xml:space="preserve">
+    <value>Karayipler ve ABD'nin bazı kısımları, 2020 yılının haziran ayında, Afrika çölünden Atlantik Okyanusu üzerinde bir Sahra tozu bulutuyla örtüldü.</value>
+  </data>
+  <data name="str4" xml:space="preserve">
+    <value>Penguen Koruma Sistemi’yle buzulların erimesi ve penguenlerin yaşam koşullarını kolaylaştırdı.</value>
+  </data>
+  <data name="str5" xml:space="preserve">
+    <value>Yağışsız geçen günler ve baraj doluluk oranlarındaki düşüş ülke genelinde kuraklık tehlikesini gündeme getirdi.</value>
+  </data>
+  <data name="strh1" xml:space="preserve">
+    <value>Küresel Isınma</value>
+  </data>
+  <data name="strh2" xml:space="preserve">
+    <value>Son Dakika Haberleri</value>
+  </data>
+  <data name="strh3" xml:space="preserve">
+    <value>Toz Fırtınası!</value>
+  </data>
+  <data name="strh4" xml:space="preserve">
+    <value>Koruma Sistemi!</value>
+  </data>
+  <data name="strh5" xml:space="preserve">
+    <value>İzmir Sorunu!</value>
   </data>
 </root>

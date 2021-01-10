@@ -1,4 +1,6 @@
-﻿<html>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<html>
 
 <head>
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,400italic,600italic,600' rel='stylesheet' type='text/css'>
@@ -13,9 +15,8 @@
 <body>
 
 
-
-
-    <div class="container">
+    <p></p>
+    <div class="container1">
 
         <div class="info-card-container">
 
@@ -30,14 +31,14 @@
                 </div>
 
                 <div class="info-card__bio info-card__content">
-                    <h2 class="info-card__bio--title">Küresel Isınma</h2>
+                    <h2 class="info-card__bio--title">@Localizer["strh1"]</h2>
 
                     <p class="info-card__bio--copy">
-                        Küresel ısınma, başlıca atmosfere salınan sera gazların neden olduğu düşünülen sera etkisinin sonucunda, Dünya üzerinde yıl boyunca kara, deniz ve havada ölçülen ortalama sıcaklıklarda görülen artışa verilen isimdir. Günümüzde iklim bilimciler (klimatolog) küresel ısınma konusunda hemfikirdirler.
+                        @Localizer["str1"]
                     </p>
 
                     <p class="info-card__bio--copy">
-                        Küresel İklim Değişikliği insani fosil yakıtlar tüketimi, endüstriyel ve tarımsal gibi faaliyetlerinin sonucu olarak atmosferdeki miktarı ve yoğunluğu artan sera gazlarının neden olduğu küresel ısınmanın neden olduğu iklim değişiklikleridir. Bu iklim değişiklikleri kuraklık, çölleşme, yağışlardaki dengesizlik ve sapmalar, su baskınları, tayfun, fırtına, hortum vb. meteorolojik olaylarda artışlar gibi belirtilerle kendini gösterir.
+                       @Localizer["str2"] 
                     </p>
 
                 </div>
@@ -46,43 +47,34 @@
             </div>
         </div>
 
-    </div>
+     </div>
+        <h1>@Localizer["strh2"]</h1>
 
-
-
-
-
-
-    <h1>Son Dakika Haberleri</h1>
-
-    <div class="grid-container">
-        <div class="grid-col">
-            <img src="https://akcalisprey.com.tr/wp-content/uploads/2019/10/kursel-isinma-1.jpg" alt="">
-            <div class="body-content">
-                <h3>Toz Fırtınası!</h3>
-                <p>Karayipler ve ABD'nin bazı kısımları, 2020 yılının haziran ayında, Afrika çölünden Atlantik Okyanusu üzerinde bir Sahra tozu bulutuyla örtüldü.</p>
-                <a href="#" class="round-btn"><i class="fa fa-long-arrow-right"></i></a>
+        <div class="grid-container">
+            <div class="grid-col">
+                <img src="https://akcalisprey.com.tr/wp-content/uploads/2019/10/kursel-isinma-1.jpg" alt="">
+                <div class="body-content">
+                    <h3>@Localizer["strh3"]</h3>
+                    <p>@Localizer["str3"]</p>
+                    <a href="#" class="round-btn"><i class="fa fa-long-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="grid-col">
+                <img src="https://climateandcapitalism.com/wp-content/uploads/2020/02/Penguin-melting.jpg" alt="">
+                <div class="body-content">
+                    <h3>@Localizer["strh4"]</h3>
+                    <p>@Localizer["str4"]</p>
+                    <a href="#" class="round-btn"><i class="fa fa-long-arrow-right"></i></a>
+                </div>
+            </div> <div class="grid-col">
+                <img src="https://i.pinimg.com/originals/69/25/c5/6925c5e66af577362d6530c966226bbc.jpg" alt="">
+                <div class="body-content">
+                    <h3>@Localizer["strh5"]</h3>
+                    <p>@Localizer["str5"]</p>
+                    <a href="#" class="round-btn"><i class="fa fa-long-arrow-right"></i></a>
+                </div>
             </div>
         </div>
-        <div class="grid-col">
-            <img src="https://climateandcapitalism.com/wp-content/uploads/2020/02/Penguin-melting.jpg" alt="">
-            <div class="body-content">
-                <h3>Koruma Sistemi!</h3>
-                <p>Penguen Koruma Sistemi’yle buzulların erimesi ve penguenlerin yaşam koşullarını kolaylaştırdı.</p>
-                <a href="#" class="round-btn"><i class="fa fa-long-arrow-right"></i></a>
-            </div>
-        </div> <div class="grid-col">
-            <img src="https://i.pinimg.com/originals/69/25/c5/6925c5e66af577362d6530c966226bbc.jpg" alt="">
-            <div class="body-content">
-                <h3>İzmir Sorunu!</h3>
-                <p>Yağışsız geçen günler ve baraj doluluk oranlarındaki düşüş ülke genelinde kuraklık tehlikesini gündeme getirdi.</p>
-                <a href="#" class="round-btn"><i class="fa fa-long-arrow-right"></i></a>
-            </div>
-        </div>
-    </div>
-
-
-
 </body>
 
 </html>

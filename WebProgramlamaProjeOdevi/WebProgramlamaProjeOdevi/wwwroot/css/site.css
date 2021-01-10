@@ -88,7 +88,6 @@ body {
 
 
 
-
 html,
 body * {
     box-sizing: border-box;
@@ -398,11 +397,13 @@ h1 {
     }
     */
 .grid-container {
-    width: 90%;
+
     margin: 0 auto;
+    height: 600px;
 }
 
 .grid-col {
+    position:relative;
     width: 33.3%;
     min-width: 300px;
     box-sizing: border-box;
@@ -569,7 +570,6 @@ h1 {
     background-image: url("https://images.unsplash.com/photo-1478558284440-e15abf10c81d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80");
     background-repeat: no-repeat;
     background-color: #fff;
-    mix-blend-mode: soft-light;
     background-position: -5rem;
     background-size: cover;
     width: 100%;
@@ -826,10 +826,10 @@ body {
     opacity: 0;
     -webkit-transition: opacity 200ms linear;
     -moz-transition: opacity 200ms linear;
-    -ms-transition: opacity 200ms linear;
+
     transition: opacity 200ms linear;
 }
-    /*通过opacity来切换不同的选项卡*/
+
     .mainContent > div:target {
         opacity: 1;
     }
@@ -984,18 +984,12 @@ body {
     border: none;
     text-indent: 10px;
 }
-    /*统一各浏览器下placeholder内的字体样式*/
+
     .quick-press input[type="text"]::-webkit-input-placeholder {
         font-size: 14px;
     }
 
-    .quick-press input[type="text"]:-moz-input-placeholder {
-        font-size: 14px;
-    }
 
-    .quick-press input[type="text"]::-moz-input-placeholder {
-        font-size: 14px;
-    }
 
     .quick-press input[type="text"]:-ms-input-placeholder {
         font-size: 14px;
@@ -1015,7 +1009,7 @@ body {
     width: 37px;
     background: -webkit-linear-gradient( top, rgb(246, 246, 240), rgb(232, 232, 232) );
     background: -moz-linear-gradient(top, rgb(246, 246, 240), rgb(232, 232, 232));
-    background: -ms-linear-gradient(top, rgb(246, 246, 240), rgb(232, 232, 232));
+
     background: linear-gradient(top, rgb(246, 246, 240), rgb(232, 232, 232));
     border: 1px solid rgb(229, 229, 229);
     color: rgb(102, 102, 102);
@@ -1027,7 +1021,7 @@ body {
     .quick-press .delet:hover {
         background: -webkit-linear-gradient( top, rgb(232, 232, 232), rgb(246, 246, 240) );
         background: -moz-linear-gradient(top, rgb(232, 232, 232), rgb(246, 246, 240));
-        background: -ms-linear-gradient(top, rgb(232, 232, 232), rgb(246, 246, 240));
+
         background: linear-gradient(top, rgb(232, 232, 232), rgb(246, 246, 240));
     }
 
@@ -1035,7 +1029,7 @@ body {
     .quick-press .delet:active {
         background: -webkit-linear-gradient( top, rgb(228, 228, 228), rgb(210, 210, 210) );
         background: -moz-linear-gradient(top, rgb(228, 228, 228), rgb(210, 210, 210));
-        background: -ms-linear-gradient(top, rgb(228, 228, 228), rgb(210, 210, 210));
+
         background: linear-gradient(top, rgb(228, 228, 228), rgb(210, 210, 210));
     }
 
@@ -1047,14 +1041,14 @@ body {
     font-size: 16px;
     background: -webkit-linear-gradient(top, rgb(245, 101, 82), rgb(234, 83, 63));
     background: -moz-linear-gradient(top, rgb(245, 101, 82), rgb(234, 83, 63));
-    background: -ms-linear-gradient(top, rgb(245, 101, 82), rgb(234, 83, 63));
+
     background: linear-gradient(top, rgb(245, 101, 82), rgb(234, 83, 63));
 }
 
     .quick-press .submit:hover {
         background: -webkit-linear-gradient(top, rgb(220, 85, 70), rgb(210, 65, 53));
         background: -moz-linear-gradient(top, rgb(220, 85, 70), rgb(210, 65, 53));
-        background: -ms-linear-gradient(top, rgb(220, 85, 70), rgb(210, 65, 53));
+
         background: linear-gradient(top, rgb(220, 85, 70), rgb(210, 65, 53));
     }
 /*logo*/
@@ -1085,7 +1079,7 @@ body {
         display: inline-block;
         background: -webkit-linear-gradient( top, rgb(255, 255, 255), rgb(245, 245, 245) );
         background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(245, 245, 245));
-        background: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(245, 245, 245));
+
         background: linear-gradient(top, rgb(255, 255, 255), rgb(245, 245, 245));
     }
 /*statusbar底部功能按钮*/

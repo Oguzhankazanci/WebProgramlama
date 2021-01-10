@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Localization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +11,8 @@ namespace WebProgramlamaProjeOdevi.Controllers
 {
     public class HaberController : Controller
     {
-  
-        
+    
+   
         public IActionResult Haberindex()
         {
             String connectionString = "Server=(localdb)\\mssqllocaldb;Database=aspnet-WebProgramlamaProjeOdevi-8ED536E3-45A2-46E8-87FD-1408BA3E2B4F;Trusted_Connection=True;MultipleActiveResultSets=true";
