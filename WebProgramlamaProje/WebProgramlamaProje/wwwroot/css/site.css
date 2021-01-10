@@ -1,618 +1,127 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-    float: right;
-}
-/* Provide sufficient contrast against white background */
-a {
-    color: #0366d6;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-    font-size: 14px;
-}
-
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-}
-
-.border-top {
-    border-top: 1px solid #e5e5e5;
-}
-
-.border-bottom {
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-    font-size: 1rem;
-    line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-    position: relative;
-    min-height: 100%;
-}
-
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
-}
-
-
-
-
-
-html,
-body * {
+﻿* {
     box-sizing: border-box;
-    font-family: 'Titillium Web', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
-body {
-    background: -webkit-linear-gradient(rgba(246, 247, 249, 0.8), rgba(246, 247, 249, 0.8)), url(https://upload.wikimedia.org/wikipedia/commons/8/8c/K2,_Mount_Godwin_Austen,_Chogori,_Savage_Mountain.jpg) no-repeat center center fixed;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/8/8c/K2,_Mount_Godwin_Austen,_Chogori,_Savage_Mountain.jpg) no-repeat center center fixed;
-    background-size: cover;
+html {
+    font-size: 18px;
 }
 
-nav {
+.topbar {
+    background: #79B9D2;
+    color: white;
     width: 100%;
-    height: 48px;
-    background: -webkit-linear-gradient(rgba(35, 43, 85, 0.35), rgba(35, 43, 85, 0.55));
-    background: linear-gradient( rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.55));
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    padding: 5px 20px;
 }
 
-nav {
-    text-align: center;
-}
-
-    nav ul li:hover > ul {
-        overflow: visible;
-        max-height: 1240px;
-        opacity: 1;
+    .topbar h1 {
+        cursor: pointer;
     }
 
-        nav ul li:hover > ul li {
-        }
-
-    nav ul {
-        margin: 0;
-        list-style: none;
-        position: relative;
-        display: inline-table;
+    .topbar nav {
+        margin-top: 25px;
     }
 
-        nav ul:after {
-            content: "";
-            clear: both;
-            display: block;
-        }
-
-        nav ul li {
-            float: left;
-            height: 48px;
-            line-height: 48px;
-            transition: background 0.3s ease;
-        }
-
-            nav ul li:hover {
-                background: rgba(0, 0, 0, 0.3);
-            }
-
-                nav ul li:hover > a {
-                    color: #fff;
-                }
-
-            nav ul li a {
-                display: block;
-                padding: 0 40px;
-                color: #919191;
-                text-decoration: none;
-            }
-
-        nav ul ul {
-            display: block;
-            overflow: hidden;
-            max-height: 0;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            background: -webkit-linear-gradient(rgba(35, 43, 85, 0.35), rgba(35, 43, 85, 0.55));
-            background: linear-gradient( rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.55));
-            border-radius: 0px;
+        .topbar nav ul {
             padding: 0;
-            position: absolute;
-            top: 100%;
-            box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+            margin: 0;
         }
 
-            nav ul ul li {
-                float: none;
-                position: relative;
+            .topbar nav ul li {
+                display: inline-block;
+                padding: 10px;
             }
 
-                nav ul ul li a {
-                    padding: 0 40px;
-                    color: #919191;
-                    transition: all .5s ease;
-                    white-space: nowrap;
+                .topbar nav ul li a {
+                    color: white;
+                    text-decoration: none;
                 }
 
-            nav ul ul ul {
-                position: absolute;
-                left: 100%;
-                top: 0;
+ul.post-grid {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+    ul.post-grid li {
+        padding: 20px;
+        cursor: pointer;
+        transition: background linear 0.5s;
+        border-bottom: 1px solid #3a8bab;
+    }
+
+        ul.post-grid li:hover {
+            background: #3a8bab;
+            color: white;
+        }
+
+            ul.post-grid li:hover h3 {
+                color: white;
             }
 
-.welcome {
-    font-size: 57.6px;
-    line-height: 64px;
-    font-family: 'Muli';
-    color: #ecf0f1;
-    height: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -15px;
-    margin-left: -165px;
+.content {
+    width: 100%;
+    position: relative;
+    padding: 20px 40px 20px;
 }
 
-    .welcome:before {
-        content: '[';
-        position: absolute;
-        left: -30px;
-        line-height: 64px;
-    }
-
-    .welcome:after {
-        content: ']';
-        position: absolute;
-        right: -30px;
-        line-height: 64px;
-    }
-
-    .welcome:after,
-    .welcome:before {
-        font-family: 'Muli';
-        color: #ACACAC;
-        font-weight: 500;
-        font-size: 64px;
-        animation: 2s linear 0s normal none infinite opacity;
-        -webkit-animation: 2s ease-out 0s normal none infinite opacity;
-        -moz-animation: 2s ease-out 0s normal none infinite opacity;
-        -o-animation: 2s ease-out 0s normal none infinite opacity;
-    }
-
-.visible {
-    float: left;
-    font-weight: 600;
-    overflow: hidden;
-    height: 64px;
+h2,
+h3 {
+    color: #3a8bab;
 }
 
-.welcome p {
-    display: inline;
-    float: left;
+.post {
+    transition: 0.5s linear all;
+    opacity: 1;
+    padding-bottom: 30px;
+}
+
+    .post cite {
+        display: inline-block;
+        padding: 10px 0;
+    }
+
+.comments ul {
     margin: 0;
+    padding: 0;
 }
 
-.welcome ul {
-    margin-top: 0;
-    padding-left: 284px;
-    text-align: left;
-    list-style: none;
-    animation: 6s linear 0s normal none infinite change;
-    -webkit-animation: 6s linear 0s normal none infinite change;
-    -moz-animation: 6s linear 0s normal none infinite change;
-    -o-animation: 6s linear 0s normal none infinite change;
+    .comments ul li {
+        list-style-type: none;
+        padding: 20px 5px;
+        border-bottom: 1px #79B9D2 solid;
+    }
+
+.post.ng-hide {
+    opacity: 0;
 }
 
-    .welcome ul li {
-        line-height: 64px;
-        margin: 0;
-    }
-
-@-webkit-keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
+.post.ng-hide-add,
+.post.ng-hide-remove {
+    display: block !important;
 }
 
-@keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes change {
-    0% {
-        margin-top: 0;
-    }
-
-    15% {
-        margin-top: 0;
-    }
-
-    25% {
-        margin-top: -64px;
-    }
-
-    40% {
-        margin-top: -64px;
-    }
-
-    50% {
-        margin-top: -128px;
-    }
-
-    65% {
-        margin-top: -128px;
-    }
-
-    75% {
-        margin-top: -64px;
-    }
-
-    85% {
-        margin-top: -64px;
-    }
-
-    100% {
-        margin-top: 0;
-    }
-}
-
-@keyframes change {
-    0% {
-        margin-top: 0;
-    }
-
-    15% {
-        margin-top: 0;
-    }
-
-    25% {
-        margin-top: -64px;
-    }
-
-    40% {
-        margin-top: -64px;
-    }
-
-    50% {
-        margin-top: -128px;
-    }
-
-    65% {
-        margin-top: -128px;
-    }
-
-    75% {
-        margin-top: -64px;
-    }
-
-    85% {
-        margin-top: -64px;
-    }
-
-    100% {
-        margin-top: 0;
-    }
-}
-
-
-
-
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
-
-body {
+form {
     width: 100%;
-    height: 100vh;
-    font-family: "Roboto";
-    background: #fff;
 }
 
-h1 {
-    font-size: 42px;
-    font-weight: 900;
-    margin: 50px 5%;
-    text-transform: capitalize;
-    position: relative;
-}
-
-    h1:after {
-        position: absolute;
-        content: "";
-        top: -10px;
-        left: 0;
-        width: 80px;
-        height: 4px;
-        background: #2c3e50;
-    }
-
-.grid-container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.grid-col {
-    width: 33.3%;
-    min-width: 300px;
-    box-sizing: border-box;
-    padding-right: 20px;
-    margin-bottom: 20px;
-    float: left;
-}
-
-    .grid-col img {
-        width: 100%;
-        height: auto;
-        max-height: 250px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-    }
-
-.body-content {
-    background: #2c3e50;
-    padding: 0 30px 120px 40px;
-    position: relative;
-    border: 1px solid #2c3e50;
-    border-top: none;
-    z-index: 1;
-    line-height: 23px;
-    color: #fff;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-    .body-content:before {
-        content: "";
-        position: absolute;
-        top: -30px;
-        left: -1px;
-        width: 100%;
-        height: 50px;
-        background: #2c3e50;
-        border-left: 1px solid #2c3e50;
-        border-right: 1px solid #2c3e50;
-        transform: skewY(5deg);
-        z-index: -1;
-        box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.4);
-    }
-
-    .body-content h3 {
-        margin-bottom: 15px;
-        font-family: "Roboto";
-        font-weight: 900;
-        font-size: 22px;
-    }
-
-.round-btn {
-    position: absolute;
-    bottom: 25px;
-    left: 40px !important;
-    width: 60px;
-    height: 60px;
-    font-size: 22px;
-    line-height: 60px;
-    text-align: center;
-    background: #fff;
-    color: #2c3e50;
-    border-radius: 50%;
-    z-index: 1;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2), 0 0 0 0 rgba(255, 255, 255, 0);
-}
-
-    .round-btn:hover {
-        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2), 0 0 0 20px rgba(255, 255, 255, 0.12);
-    }
-
-
-
-
-
-
-/***** Info Card Component *****/
-/*******************************/
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-size: 1.4rem;
-}
-
-/* =14px */
-h1 {
-    font-size: 2.4rem;
-}
-
-/* =24px */
-.info-card-container {
+input,
+textarea {
+    display: block;
     width: 100%;
-    min-height: 100%;
-    height: 83rem;
-    overflow: hidden;
-    background: linear-gradient(to right, #0C1B23 0%, #0C1B23 70%, #fff 70%, #fff 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$white", endColorstr="$white",GradientType=1 );
-    /* IE6-9 */
-    position: relative;
+    padding: 10px;
+    font-size: 1.1em;
 }
 
-.info-card {
-    min-width: 80%;
-    max-width: 90rem;
-    min-height: 70%;
-    height: 70rem;
-    margin: 0 auto;
-    position: relative;
-    background-color: #fff;
-    box-shadow: 0.01rem 0.01rem 1rem #0C1B23;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+.ng-invalid.ng-dirty {
+    border-color: red;
 }
 
-.info-card__content {
-    float: left;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
+.ng-valid.ng-dirty {
+    border-color: green;
 }
 
-.info-card__image-exposure {
-    width: 45%;
+img {
+    max-width: 100%;
 }
 
-.info-card__bio {
-    width: 40%;
-    padding: 5rem;
-    height: auto;
-    font-family: "Domine", serif;
-}
-
-.info-card__bio--title {
-    color: #141D1D;
-    font-size: 3.5rem;
-    font-weight: 300;
-}
-
-.info-card__bio--copy {
-    color: #9da09f;
-    line-height: 2;
-}
-
-.info-card__image-exposure__item {
-    background-image: url("https://khosann.com/wp-content/uploads/2019/08/Kuresel-isinmayi-yavaslatmak-icin-eti-azaltin-.jpg");
-    background-color: #fff;
-    background-position: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    position: absolute;
-    opacity: 0.9;
-}
-
-.info-card__image-exposure--blend {
-    background-image: url("https://images.unsplash.com/photo-1478558284440-e15abf10c81d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80");
-    background-repeat: no-repeat;
-    background-color: #fff;
-    mix-blend-mode: soft-light;
-    background-position: -5rem;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    position: absolute;
-    -webkit-animation: blendAnimate 30s linear infinite;
-    animation: blendAnimate 30s linear infinite;
-}
-
-.close {
-    width: 2rem;
-    height: 0.25rem;
-    background-color: #000;
-    position: absolute;
-    top: 2.5rem;
-    right: 2rem;
-    transform: rotate(45deg);
-    cursor: pointer;
-}
-
-    .close:before {
-        content: "";
-        display: block;
-        width: 2rem;
-        height: 0.25rem;
-        background: #000;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: rotate(-90deg);
-    }
-
-@-webkit-keyframes blendAnimate {
-    0% {
-        background-position: 0;
-    }
-
-    50% {
-        background-position: 100% 100%;
-    }
-
-    100% {
-        background-position: 0;
-    }
-}
-
-@keyframes blendAnimate {
-    0% {
-        background-position: 0;
-    }
-
-    50% {
-        background-position: 100% 100%;
-    }
-
-    100% {
-        background-position: 0;
-    }
-}
